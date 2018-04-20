@@ -1,0 +1,48 @@
+﻿AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: An AWS Serverless Specification template to deploy a private Alexa for Business skill with Salesforce integration.
+Parameters:
+  SalesforceInstanceUrl:
+    Description: 'The service URL used to make Salesforce queries. If using My Domain, looks like this: https://<your-domain>.my.salesforce.com. If not using My Domains, looks like this: https://na50.salesforce.com/.'
+    Type: String
+  SkillID:
+    Description: 'The Alexa Skill ID to restrict access to this Lambda. Note: this can be provided in the Lambda UI via function triggers too.'
+    Type: String
+    Default: ''
+Resources:
+  AlexaSalesforceNotesFunction:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs6.10
+      CodeUri: .
+      Description: 'A Lambda function provides a transcription for Salesforce Chatter attached to a sales opportunity.'
+      Environment:
+        Variables:
+          INSTANCE_URL: !Ref SalesforceInstanceUrl
+          SKILL_ID: !Ref SkillID
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: alexa-skill-transcribe
+      MemorySize: 128
+      Timeout: 3
+      Events:
+        AlexaSkillEvent:
+          Type: AlexaSkill
+  DynamoTable:
+    Type: 'AWS::DynamoDB::Table'
+    Properties:
+      TableName: alexa-skill-transcribe
+      AttributeDefinitions:
+        - AttributeName: sessionid
+          AttributeType: S
+        - AttributeName: s_order
+          AttributeType: N
+      KeySchema:
+        - AttributeName: sessionid
+          KeyType: HASH
+        - AttributeName: s_order
+          KeyType: RANGE
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5

@@ -1,0 +1,166 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "salesforce notes",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "SaveChatterIntent",
+          "samples": [
+            "save to chatter",
+            "post to chatter"
+          ]
+        },
+        {
+          "name": "SaveNoteIntent",
+          "samples": [
+            "save to notes",
+            "save as a note",
+            "write to notes"
+          ]
+        },
+        {
+          "name": "SelectOpportunityIntent",
+          "slots": [
+            {
+              "name": "OppName",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "find my opportunity called {OppName}",
+            "find the {OppName} opportunity",
+            "find my {OppName} opportunity",
+            "find the opportunity named {OppName}",
+            "find my opportunity named {OppName}",
+            "find the opportunity called {OppName}",
+            "open the {OppName} opportunity",
+            "open my {OppName} opportunity",
+            "open my opportunity called {OppName}",
+            "open the opportunity named {OppName}",
+            "open the opportunity called {OppName}",
+            "select the opportunity called {OppName}",
+            "select the opportunity named {OppName}",
+            "select the opportunity {OppName}",
+            "select the {OppName} opportunity",
+            "select opportunity {OppName}"
+          ]
+        },
+        {
+          "name": "StopTranscribeIntent",
+          "samples": [
+            "stop transcribing",
+            "stop",
+            "i'm done",
+            "i'm finished"
+          ]
+        },
+        {
+          "name": "TranscribeIntent",
+          "slots": [
+            {
+              "name": "Query",
+              "type": "AMAZON.LITERAL"
+            }
+          ],
+          "samples": [
+            "{Is it free|Query}",
+            "{Wow does that work|Query}",
+            "{Mary plays the piano|Query}",
+            "{How was the math test|Query}",
+            "{Two seats were vacant|Query}",
+            "{This is a Japanese doll|Query}",
+            "{The river stole the gods|Query}",
+            "{She did her best to help him|Query}",
+            "{Tom got a small piece of pie|Query}",
+            "{I am never at home on Sundays|Query}",
+            "{A glittering gem is not enough|Query}",
+            "{Don't step on the broken glass|Query}",
+            "{I want more detailed information|Query}",
+            "{The stranger officiates the meal|Query}",
+            "{I hear that Nancy is very pretty|Query}",
+            "{Please wait outside of the house|Query}",
+            "{The book is in front of the table|Query}",
+            "{Let me help you with your baggage|Query}",
+            "{Sixty-Four comes asking for bread|Query}",
+            "{She folded her handkerchief neatly|Query}",
+            "{We need to rent a room for our party|Query}",
+            "{The shooter says goodbye to his love|Query}",
+            "{She advised him to come back at once|Query}",
+            "{She was too short to see over the fence|Query}",
+            "{The sky is clear the stars are twinkling|Query}",
+            "{She always speaks to him in a loud voice|Query}",
+            "{Abstraction is often one floor above you|Query}",
+            "{He told us a very exciting adventure story|Query}",
+            "{The quick brown fox jumps over the lazy dog|Query}",
+            "{It was getting dark and we weren't there yet|Query}",
+            "{Everyone was busy so I went to the movie alone|Query}",
+            "{Joe made the sugar cookies Susan decorated them|Query}",
+            "{If I don't like something I'll stay away from it|Query}",
+            "{I want to buy a onesie but know it won't suit me|Query}",
+            "{She wrote him a long letter but he didn't read it|Query}",
+            "{The memory we used to share is no longer coherent|Query}",
+            "{I am counting my calories yet I really want dessert|Query}",
+            "{They got there early and they got really good seats|Query}",
+            "{He ran out of money so he had to stop playing poker|Query}",
+            "{We have never been to Asia nor have we visited Africa|Query}",
+            "{Check back tomorrow I will see if the book has arrived|Query}",
+            "{He didn't want to go to the dentist yet he went anyway|Query}",
+            "{Cats are good pets for they are clean and are not noisy|Query}",
+            "{Yeah I think it's a good environment for learning English|Query}",
+            "{The waves were crashing on the shore it was a lovely sight|Query}",
+            "{I currently have four windows open up and I don't know why|Query}",
+            "{It didn't and they don't recommend anyone else do it either|Query}",
+            "{I will never be this young again Ever Oh damn I just got older|Query}",
+            "{Lets all be unique together until we realise we are all the same|Query}",
+            "{A song can make or ruin a person's day if they let it get to them|Query}",
+            "{She did not cheat on the test for it was not the right thing to do|Query}",
+            "{The body may perhaps compensates for the loss of a true metaphysics|Query}",
+            "{He said he was not there yesterday however many people saw him there|Query}",
+            "{Should we start class now or should we wait for everyone to get here|Query}",
+            "{I would have gotten the promotion but my attendance wasn't good enough|Query}",
+            "{If Purple People Eaters are real where do they find purple people to eat|Query}",
+            "{She borrowed the book from him many years ago and hasn't yet returned it|Query}",
+            "{Malls are great places to shop I can find everything I need under one roof|Query}",
+            "{Wednesday is hump day but has anyone asked the camel if he's happy about it|Query}",
+            "{Italy is my favorite country in fact I plan to spend two weeks there next year|Query}",
+            "{My Mum tries to be cool by saying that she likes all the same things that I do|Query}",
+            "{There was no ice cream in the freezer nor did they have money to go to the store|Query}",
+            "{This is the last random sentence I will be writing and I am going to stop mid sent|Query}",
+            "{He turned in the research paper on Friday otherwise he would have not passed the class|Query}",
+            "{When I was little I had a car door slammed shut on my hand I still remember it quite vividly|Query}",
+            "{She works two jobs to make ends meet at least that was her reason for not having time to join us|Query}",
+            "{Last Friday in three week's time I saw a spotted striped blue worm shake hands with a legless lizard|Query}",
+            "{Someone I know recently combined Maple Syrup and buttered Popcorn thinking it would taste like caramel popcorn|Query}",
+            "{Sometimes it is better to just walk away from things and go back to them later when you're in a better frame of mind|Query}",
+            "{Sometimes all you need to do is completely make an ass of yourself and laugh it off to realise that life isn't so bad after all|Query}",
+            "{What was the person thinking when they discovered cow's milk was fine for human consumption and why did they do it in the first place|Query}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "united oil installations"
+              }
+            }
+          ],
+          "name": "AMAZON.SearchQuery"
+        }
+      ]
+    }
+  }
+}

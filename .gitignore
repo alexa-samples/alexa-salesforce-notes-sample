@@ -1,0 +1,7 @@
+# node stuff
+node_modules/
+
+# other
+temp/
+.DS_Store
+output*.yaml

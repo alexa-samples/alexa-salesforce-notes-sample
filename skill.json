@@ -1,0 +1,48 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Use Alexa to transcribe notes or post to Chatter for your opportunities  in order to quickly and easily add details to Salesforce.",
+          "examplePhrases": [
+            "Alexa, open salesforce notes",
+            "Find my opportunity called United Oil Installations",
+            "Save to chatter"
+          ],
+          "keywords": [],
+          "name": "Salesforce Transcribe Notes",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/44ed/b4db136b6e1b4cbf99b5375fadfbe1ba/APP_ICON?versionId=lRG2p0ztULJJ.8TzpC0LYK8hEj2QYCVB&AWSAccessKeyId=AKIAI3X6PUXD7CU5F5BQ&Expires=1523384329&Signature=9tjFE29p81mrbKN%2F2sCMxNk1KQo%3D",
+          "description": "Use Alexa to easily add more detailed notes or post to the Chatter of a sales opportunity using this skill. For sales teams that use Salesforce, this skill allows you to quickly and easily add these notes and context to opportunities whenever it suits you.",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/cf48/8f629fe100e6467cb1bba0a967122a9c/APP_ICON_LARGE?versionId=r37K68nJyFTLfasPtvK6FVwcM8HdqDHV&AWSAccessKeyId=AKIAI3X6PUXD7CU5F5BQ&Expires=1523384329&Signature=EN6snagacYAuzJAejAlcBQ0JK0Q%3D"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Requires connection to a Salesforce instance.",
+      "category": "ORGANIZERS_AND_ASSISTANTS",
+      "distributionMode": "PRIVATE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {
+          "termsOfUseUrl": "https://aws.amazon.com/service-terms/",
+          "privacyPolicyUrl": "https://aws.amazon.com/privacy/"
+        }
+      },
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

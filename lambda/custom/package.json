@@ -1,0 +1,17 @@
+{
+  "name": "alexa-salesforce-notes-sample",
+  "version": "1.0.0",
+  "description": "A skill to transcribe from Alexa to Salesforce",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amazon.com, Inc.",
+  "license": "MIT",
+  "dependencies": {
+    "ask-sdk": "^2.0.0",
+    "ask-sdk-v1adapter": "^2.0.1",
+    "nforce": "^1.10.0",
+    "nforce-chatter": "0.0.1"
+  }
+}
