@@ -78,30 +78,4 @@ You can directly jump to the page by substituting your Skill ID into the followi
 
 Click the slider next to Disabled for testing. It should now say Enabled.
 
-### Simulate
-
-1. Run the following command to execute a command against your skill:
-
-```
-$ ask simulate -l en-US -t "alexa, open salesforce"
-✓ Simulation created for simulation id: 0c857923-0753-43a5-b44c-ee2fca137aab
-◜ Waiting for simulation response{
-  "status": "SUCCESSFUL",
-  "result": {
-...
-```
-
-2. Check for the output message to also see what Alexa would have said:
-
-```
-...
-"outputSpeech": {
-  "type": "SSML",
-  "ssml": "<speak> A Salesforce account is required to use this skill. I've placed more information on a card in your Alexa app. </speak>"
-},
-...
-```
-
-3. In this case, this is the right message because we need to have a Salesforce account linked in order to use this skill.
-
 [![Next](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/button-next._TTH_.png)](./3-account-linking.md)

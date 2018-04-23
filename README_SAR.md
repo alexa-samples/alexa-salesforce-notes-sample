@@ -41,9 +41,9 @@ $ ask init
 
 Note: You need an [Amazon developer account](https://developer.amazon.com) to create an Alexa Skill.
 
-3. Clone or download [https://github.com/Alexa/skill-sample-salesforce-notes](https://github.com/Alexa/skill-sample-salesforce-notes).
-
-4. Set your Lambda function name in the Alexa config file. In the directory you just downloaded, modify the ```.ask/config``` file to have the Lambda ARN that you saved in the previous step. You want to change the ```"uri"``` setting to match that ARN. For example:
+3. Clone or download [https://github.com/alexa/alexa-salesforce-notes-sample](https://github.com/alexa/alexa-salesforce-notes-sample).
+4. Navigate into the alexa-salesforce-notes-sample directory. 
+5. Set your Lambda function name in the Alexa config file. In the directory you just downloaded, modify the ```.ask/config``` file to have the Lambda ARN that you saved in the previous step. You want to change the ```"uri"``` setting to match that ARN. For example:
 
 ```json
 "apis": {
@@ -55,30 +55,32 @@ Note: You need an [Amazon developer account](https://developer.amazon.com) to cr
 }
 ```
 
-5. Deploy the Alexa skill with the following command (it will also link your Lambda source code in the repository to the skill):
+6. Deploy the Alexa skill with the following command (it will also link your Lambda source code in the repository to the skill):
 
 ```bash
 ask deploy
 ```
 
-6. Make sure to save your skill ID that comes out from the ```deploy``` command, as you need it later in the instructions.
+7. Make sure to save your skill ID that comes out from the ```deploy``` command, as you need it later in the instructions.
 
-```bash
+```
 -------------------- Create Skill Project --------------------
 Profile for the deployment: [default]
 Skill Id: **<Skill ID>**
 Skill deployment finished.
 Model deployment finished.
 Lambda deployment finished.
+Your skill is now deployed and enabled in the development stage.
+Try invoking the skill by saying “Alexa, open {your_skill_invocation_name}” or simulate an invocation via the `ask simulate` command.
 ```
 
-7. Enable Testing - In order to test the skill before publishing, you need to enable testing on the  Alexa Developer Console.
+8. Enable Testing - In order to test the skill before publishing, you need to enable testing on the  Alexa Developer Console.
 
 You can directly jump to the page by substituting your Skill ID into the following URL: ```https://developer.amazon.com/alexa/console/ask/test/<Skill ID>/development/en_US```
 
 Click the slider next to Disabled for testing. It should now say Enabled.
 
-8. For extra security, you can also go to your Lambda function and re-create the Alexa Skills Kit trigger with Skill ID verification enabled. For more details, see [the Alexa Skills Kit documentation](https://developer.amazon.com/docs/custom-skills/host-a-custom-skill-as-an-aws-lambda-function.html#configuring-the-alexa-skills-kit-trigger).
+9. For extra security, you can also go to your Lambda function and re-create the Alexa Skills Kit trigger with Skill ID verification enabled. For more details, see [the Alexa Skills Kit documentation](https://developer.amazon.com/docs/custom-skills/host-a-custom-skill-as-an-aws-lambda-function.html#configuring-the-alexa-skills-kit-trigger).
 
 ## Continue with Github instructions
 
