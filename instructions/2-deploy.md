@@ -21,12 +21,14 @@ In this part, we will deploy our skill and create the AWS Lambda function that p
 
 ### Setup (with AWS Serverless Application Repository)
 
-1. If you've deployed the application using the Serverless Application Repository, you simply need to add the function name that was created to one of the configuration files.
-2. Open your [Lambda console](https://console.aws.amazon.com/lambda/home).
-3. Find the function that is named something like this: **<Application/Stack Name>-AlexaSalesforceNotesFunction-<Generated ID>**
-4. Copy the full function name, including the stack name and generated ID at the end.
-5. Open the ```.ask/config``` in the root directory of this project.
-6. Modify the value of **"uri"** to be the function name.
+1. If you've deployed the application using the Serverless Application Repository, you simply need to add the function name that was created to one of the configuration files. Skip to **Step 4**.
+2. If you wish to deploy the skill function using the AWS Serverless Application Repository, find the application [alexa-salesforce-notes-sample](https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:473507220772:applications~alexa-salesforce-notes-sample).
+3. Follow the instructions to deploy the application, setting the required parameter for your Salesforce instance URL based off what you created in Part 1.
+4. Open your [Lambda console](https://console.aws.amazon.com/lambda/home).
+5. Find the function that is named something like this: **aws-serverless-repository-AlexaSalesforceNotesFunc-<Generated ID>**.
+6. Copy the full function name, including the stack name and generated ID at the end.
+7. Open the ```.ask/config``` in the root directory of this project.
+8. Modify the value of **"uri"** to be the function name you copied in step 6.
 
 ```
 "apis": {

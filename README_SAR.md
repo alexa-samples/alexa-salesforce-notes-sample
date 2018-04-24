@@ -26,7 +26,7 @@ One of the parameters for this application is the Salesforce Instance URL. If yo
 2. Once the deployment was completed, go to your [CloudFormation Stacks](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks) and find the stack you just deployed.
 3. Click on the stack name.
 4. Expand the **Resources** menu.
-5. Copy the Lambda Function Name that was created. It should look something like this: ```<Application/Stack Name>-AlexaSalesforceNotesFunction-<Generated ID>```
+5. Copy the Lambda Function Name that was created. It should look something like this: ```aws-serverless-repository-AlexaSalesforceNotesFunc-<Generated ID>```
 
 ## Part 3. Deploying the Alexa Skill front-end
 
@@ -42,7 +42,7 @@ $ ask init
 Note: You need an [Amazon developer account](https://developer.amazon.com) to create an Alexa Skill.
 
 3. Clone or download [https://github.com/alexa/alexa-salesforce-notes-sample](https://github.com/alexa/alexa-salesforce-notes-sample).
-4. Navigate into the alexa-salesforce-notes-sample directory. 
+4. Navigate into the ```alexa-salesforce-notes-sample``` directory. 
 5. Set your Lambda function name in the Alexa config file. In the directory you just downloaded, modify the ```.ask/config``` file to have the Lambda ARN that you saved in the previous step. You want to change the ```"uri"``` setting to match that ARN. For example:
 
 ```json
