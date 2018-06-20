@@ -148,18 +148,6 @@
             "{What was the person thinking when they discovered cow's milk was fine for human consumption and why did they do it in the first place|Query}"
           ]
         }
-      ],
-      "types": [
-        {
-          "values": [
-            {
-              "name": {
-                "value": "united oil installations"
-              }
-            }
-          ],
-          "name": "AMAZON.SearchQuery"
-        }
       ]
     }
   }
