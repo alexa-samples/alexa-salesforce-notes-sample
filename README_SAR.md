@@ -36,7 +36,7 @@ Once you've deployed the Serverless App, you need to deploy the Alexa Skill fron
 2. Once you have installed the CLI, you need to initialize it with the following command:
 
 ```bash
-$ ask init
+$ ask configure
 ```
 
 Note: You need an [Amazon developer account](https://developer.amazon.com) to create an Alexa Skill.
@@ -64,14 +64,13 @@ ask deploy
 7. Make sure to save your skill ID that comes out from the ```deploy``` command, as you need it later in the instructions.
 
 ```
--------------------- Create Skill Project --------------------
-Profile for the deployment: [default]
-Skill Id: **<Skill ID>**
-Skill deployment finished.
-Model deployment finished.
-Lambda deployment finished.
-Your skill is now deployed and enabled in the development stage.
-Try invoking the skill by saying “Alexa, open {your_skill_invocation_name}” or simulate an invocation via the `ask simulate` command.
+$ ask deploy
+==================== Deploy Skill Metadata ====================
+Skill package deployed successfully.
+Skill ID: amzn1.ask.skill.xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+
+==================== Build Skill Code ====================
+...
 ```
 
 8. Enable Testing - In order to test the skill before publishing, you need to enable testing on the  Alexa Developer Console.
