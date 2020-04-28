@@ -24,9 +24,6 @@
     },
     "apis": {
       "custom": {
-        "endpoint": {
-          "sourceDir": "lambda/custom"
-        },
         "interfaces": []
       }
     },
