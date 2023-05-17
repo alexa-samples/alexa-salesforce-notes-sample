@@ -18,7 +18,7 @@ This is a NodeJS Lambda function and skill defintion to be used by [ASK CLI](htt
 You need to initialize ASK CLI with 
 
 ```bash
-$ ask init
+$ ask configure
 ```
 
 You need an [AWS account](https://aws.amazon.com) and an [Amazon developer account](https://developer.amazon.com) to create an Alexa Skill.
